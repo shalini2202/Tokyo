@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="63240" started-at="2018-03-01T12:08:39Z" finished-at="2018-03-01T12:09:42Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="63240" started-at="2018-03-01T12:08:39Z" finished-at="2018-03-01T12:09:42Z">
+      <class name="com.tokyo.Login">
+        <test-method status="PASS" signature="launchingBrowser(java.lang.String)[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="launchingBrowser" is-config="true" duration-ms="19581" started-at="2018-03-01T17:38:39Z" finished-at="2018-03-01T17:38:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="loginPage" is-config="true" duration-ms="9567" started-at="2018-03-01T17:38:59Z" finished-at="2018-03-01T17:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="loginSuccessfully()[pri:1, instance:com.tokyo.Login@1ab3a8c8]" name="loginSuccessfully" duration-ms="10837" started-at="2018-03-01T17:39:08Z" finished-at="2018-03-01T17:39:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessfully -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="logout" is-config="true" duration-ms="4029" started-at="2018-03-01T17:39:19Z" finished-at="2018-03-01T17:39:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="loginPage" is-config="true" duration-ms="2027" started-at="2018-03-01T17:39:23Z" finished-at="2018-03-01T17:39:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="FAIL" signature="loginWrongPassword()[pri:2, instance:com.tokyo.Login@1ab3a8c8]" name="loginWrongPassword" duration-ms="2059" started-at="2018-03-01T17:39:25Z" finished-at="2018-03-01T17:39:27Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']"}Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']"}Command duration or timeout: 0 millisecondsat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)at org.openqa.selenium.By$ByXPath.findElement(By.java:361)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at com.tokyo.Login.loginWrongPassword(Login.java:132)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']"}For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'System info: host: 'MC0Y6RJC', ip: '172.16.48.86', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'Driver info: driver.version: unknownat <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11870)at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11879)at <anonymous class>.DelayedCommand.prototype.executeInternal_/k(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:13364)at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:13369)at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:13311)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWrongPassword -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="logout" is-config="true" duration-ms="4028" started-at="2018-03-01T17:39:27Z" finished-at="2018-03-01T17:39:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="loginPage" is-config="true" duration-ms="2030" started-at="2018-03-01T17:39:31Z" finished-at="2018-03-01T17:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="FAIL" signature="loginWrongUserName()[pri:3, instance:com.tokyo.Login@1ab3a8c8]" name="loginWrongUserName" duration-ms="5028" started-at="2018-03-01T17:39:33Z" finished-at="2018-03-01T17:39:38Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']"}Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']"}Command duration or timeout: 0 millisecondsat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)at org.openqa.selenium.By$ByXPath.findElement(By.java:361)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at com.tokyo.Login.loginWrongUserName(Login.java:158)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//input[@id='_com_liferay_login_web_portlet_LoginPortlet_login']"}For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'System info: host: 'MC0Y6RJC', ip: '172.16.48.86', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'Driver info: driver.version: unknownat <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11870)at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11879)at <anonymous class>.DelayedCommand.prototype.executeInternal_/k(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:13364)at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:13369)at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/a631020/AppData/Local/Temp/anonymous9084995106175871025webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:13311)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWrongUserName -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="logout" is-config="true" duration-ms="4026" started-at="2018-03-01T17:39:38Z" finished-at="2018-03-01T17:39:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.tokyo.Login@1ab3a8c8]" name="closeBrowser" is-config="true" duration-ms="9" started-at="2018-03-01T17:39:42Z" finished-at="2018-03-01T17:39:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.tokyo.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
